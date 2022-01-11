@@ -1,0 +1,12 @@
+{
+  "name": "day01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "masking-number.js",
+  "scripts": {
+    "aaa": "node resident-registration-number.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
