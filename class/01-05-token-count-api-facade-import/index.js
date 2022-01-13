@@ -1,6 +1,7 @@
 // 다른 js파일의 함수 불러오기
 import { checkValidationPhone, getToken, sendTokenToSMS } from './phone.js';
 
+
 console.log("안녕하세요~");
 
 // API 만들기
