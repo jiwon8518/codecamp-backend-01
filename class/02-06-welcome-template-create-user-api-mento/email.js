@@ -26,5 +26,5 @@ export function getWelcomeTemplate({ name, age, school }){
 }
 
 export function sendTemplateToEmail(email, mytemplate){
-    console.log(email + "이메일로" + mytemplate + "를 전송합니다!!")
+    console.log(email + "이메일로" + mytemplate + "를 전송합니다!!");
 }
