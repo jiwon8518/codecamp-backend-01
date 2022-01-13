@@ -22,7 +22,7 @@ export function getWelcomeTemplate({ name, age, school }){
                 <div>가입일: ${createdAt}</div>
             </body>
         </html>
-    `
+    `;
 }
 
 export function sendTemplateToEmail(email, mytemplate){
