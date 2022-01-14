@@ -1,0 +1,19 @@
+{
+  "name": "04-01-rest-apiwith-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "apollo-server": "^3.6.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "graphql": "^16.2.0",
+    "nodemon": "^2.0.15",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.3.0"
+  }
+}
