@@ -14,7 +14,7 @@ export class JwtRefreshStrategy extends PassportStrategy(Strategy, 'refresh') {
 
         return cookies.replace('refreshToken=', '');
       },
-      secretOrKey: 'myRefreshKey',
+      secretOrKey: process.env.REFRESH_TOKEN_KEY,
     });
   }
 
