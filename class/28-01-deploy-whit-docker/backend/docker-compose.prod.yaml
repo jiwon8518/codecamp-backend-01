@@ -16,5 +16,3 @@ services:
     environment:
       MYSQL_DATABASE: 'myproject'
       MYSQL_ROOT_PASSWORD: '1234'
-    ports:
-      -
