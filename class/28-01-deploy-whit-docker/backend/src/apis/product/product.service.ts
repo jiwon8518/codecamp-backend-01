@@ -8,7 +8,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { ProductCategory } from '../productCategory/entities/productCategory.entity';
 import { ProductSaleslocation } from '../productSaleslocation/entities/productSaleslocation.entity';
-import { ProductTag } from '../productTag/entities/productTag.entity';
+import { ProductTag } from '../ProductTag/entities/productTag.entity';
 import { CreateProductInput } from './dto/createProduct.input';
 import { UpdateProductInput } from './dto/updateProduct.input';
 import { Product } from './entites/product.entity';

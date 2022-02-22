@@ -1,0 +1,6 @@
+.env*
+holy-moly-341008-b5a59ae5440f.json
+
+# compiled output
+/dist
+/node_modules

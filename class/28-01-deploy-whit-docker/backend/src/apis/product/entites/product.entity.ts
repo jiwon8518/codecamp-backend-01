@@ -12,7 +12,7 @@ import {
 } from 'typeorm';
 import { ProductCategory } from 'src/apis/productCategory/entities/productCategory.entity';
 import { User } from 'src/apis/user/entities/user.entity';
-import { ProductTag } from 'src/apis/productTag/entities/productTag.entity';
+import { ProductTag } from '../../ProductTag/entities/productTag.entity';
 import { ObjectType, Field, Int } from '@nestjs/graphql';
 
 @Entity()
