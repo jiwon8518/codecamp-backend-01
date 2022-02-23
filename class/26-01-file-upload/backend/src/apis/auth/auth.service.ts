@@ -10,7 +10,7 @@ export class AuthService {
   setRefreshToken({ user, res }) {
     const refreshToken = this.jwtService.sign(
       { email: user.email, sub: user.id },
-      { secret: 'myRefreshKey', expiresIn: '2w' },
+      { secret: process.env.REFRESH_TOKEN_KEY, expiresIn: '2w' },
     );
 
     // 개발환경
@@ -28,7 +28,7 @@ export class AuthService {
     return this.jwtService.sign(
       { email: user.email, sub: user.id }, //
       // { secret: 'myAccessKey', expiresIn: '1h' }, // 암호화할 키,만료 옵션
-      { secret: 'myAccessKey', expiresIn: '1h' },
+      { secret: process.env.ACCESS_TOKEN_KEY, expiresIn: '1h' },
     );
   }
 }
