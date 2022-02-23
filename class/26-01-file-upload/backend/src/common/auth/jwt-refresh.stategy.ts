@@ -1,6 +1,8 @@
 import { Strategy, ExtractJwt } from 'passport-jwt';
 import { PassportStrategy } from '@nestjs/passport';
 import { Injectable } from '@nestjs/common';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 @Injectable()
 export class JwtRefreshStrategy extends PassportStrategy(Strategy, 'refresh') {
@@ -14,7 +16,7 @@ export class JwtRefreshStrategy extends PassportStrategy(Strategy, 'refresh') {
 
         return cookies.replace('refreshToken=', '');
       },
-      secretOrKey: 'myRefreshKey',
+      secretOrKey: process.env.REFRESH_TOKEN_KEY,
     });
   }
 
