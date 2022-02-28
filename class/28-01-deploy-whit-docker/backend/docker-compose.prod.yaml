@@ -2,7 +2,7 @@ version: '3.3' # 2버전과 3버전 차이가 많이 남
 
 services:
   my_backend:
-    image: asia.gcr.io/holy-moly-341008/my_backend:2.1
+    image: asia.gcr.io/holy-moly-341008/my_backend:2.2
     build:
       context: .
       dockerfile: Dockerfile

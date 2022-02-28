@@ -1,10 +1,26 @@
 steps:
-  - name: ubuntu
+  - name: docker/compose:1.29.0 # docker-compose
     args:
-      - echo
-      - hello
+      - -f
+      - class/28-01-deploy-whit-docker/backend/docker-compose.prod.yaml
+      - build
 
-  - name: ubuntu
+  - name: docker/compose:1.29.0 # docker-compose
     args:
-      - echo
-      - hello123123123
+      - -f
+      - class/28-01-deploy-whit-docker/backend/docker-compose.prod.yaml
+      - push
+
+  - name: gcr.io/cloud-builders/kubectl # kubectl 명령어
+    args:
+      - set
+      - image
+      - deployment/mybackend
+      - my-backend-sha256-1=asia.gcr.io/holy-moly-341008/my_backend:2.2
+    env:
+      - CLOUDSDK_COMPUTE_ZONE=asia-northeast3
+      - CLOUDSDK_CONTAINER_CLUSTER=mybackend-kubernetes-cluster
+#
+# docker compose -f docker-compose.prod.yaml build
+# docker compose -f docker-compose.prod.yaml push
+# kubectl set image deployment/mybackend my-backend-sha256-1=asia.gcr.io/holy-moly-341008/my_backend:2.2
