@@ -8,10 +8,9 @@ export class JwtGoogleStrategy extends PassportStrategy(Strategy, 'google') {
   //토큰, ... 체크를 다했다
   constructor() {
     super({
-      clientID:
-        '513734964990-b7biectf790tf2429g99l1ohld1pbpl7.apps.googleusercontent.com', //클라이언트 ID
-      clientSecret: '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', //클라이언트 보안 비밀
-      callbackURL: 'http://localhost:3000/login/google', //추가한 리디렉션 URI
+      clientID: '입력하기', //클라이언트 ID
+      clientSecret: '입력하기', //클라이언트 보안 비밀
+      callbackURL: '입력하기', //추가한 리디렉션 URI
       scope: ['email', 'profile'], //스코프는 받아올 유저 정보
     });
   }
