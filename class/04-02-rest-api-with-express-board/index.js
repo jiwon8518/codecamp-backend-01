@@ -21,4 +21,4 @@ app.post('/boards', function (req, res) {
   res.send('등록에 성공하였습니다.')
 })
 
-app.listen(3001)
+app.listen(3002)
