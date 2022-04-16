@@ -8,10 +8,10 @@ export class JwtGoogleStrategy extends PassportStrategy(Strategy, 'google') {
   //토큰, ... 체크를 다했다
   constructor() {
     super({
-      clientID: '입력하기', //클라이언트 ID
-      clientSecret: '입력하기', //클라이언트 보안 비밀
-      callbackURL: '입력하기', //추가한 리디렉션 URI
-      scope: ['email', 'profile'], //스코프는 받아올 유저 정보
+      clientID: '입력하기', // 클라이언트 ID
+      clientSecret: '입력하기', // 클라이언트 보안 비밀
+      callbackURL: '입력하기', // 추가한 리디렉션 URI
+      scope: ['email', 'profile'], // 스코프는 받아올 유저 정보
     });
   }
 
